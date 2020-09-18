@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10364F8669F7BF222EC52E05 /* Pods_WijekoonWHMCB_COBSCCOMP191P_006.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8A9E4DA3AB43D2427EC6AA /* Pods_WijekoonWHMCB_COBSCCOMP191P_006.framework */; };
 		1136D2742513898D00E71ECF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D2732513898D00E71ECF /* CustomButton.swift */; };
 		1136D2762514DC8000E71ECF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D2752514DC8000E71ECF /* HomeViewController.swift */; };
 		1136D2782514E05C00E71ECF /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D2772514E05C00E71ECF /* AuthViewController.swift */; };
@@ -22,6 +23,8 @@
 		115587E825125DAD0000C497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115587E625125DAD0000C497 /* LaunchScreen.storyboard */; };
 		115587F325125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587F225125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006Tests.swift */; };
 		115587FE25125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587FD25125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006UITests.swift */; };
+		3C7991125A2AFF5EECB16DCD /* Pods_WijekoonWHMCB_COBSCCOMP191P_006Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2669B84573156C9DFD0A568 /* Pods_WijekoonWHMCB_COBSCCOMP191P_006Tests.framework */; };
+		45ECA8C1DC925696F3AC5CDD /* Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA345B902DCBD77DF7149E /* Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,7 @@
 		1136D2792514E0F400E71ECF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1136D27C2514ECDA00E71ECF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1136D27E2514F59B00E71ECF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1136D2822514FF8600E71ECF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "WijekoonWHMCB-COBSCCOMP191P-006Tests/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		115587D525125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WijekoonWHMCB-COBSCCOMP191P-006.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		115587D825125DAB0000C497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115587DA25125DAB0000C497 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 		115587F925125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WijekoonWHMCB-COBSCCOMP191P-006UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		115587FD25125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WijekoonWHMCB_COBSCCOMP191P_006UITests.swift; sourceTree = "<group>"; };
 		115587FF25125DAD0000C497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26A497FA2A787378455FC780 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.release.xcconfig"; path = "Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests/Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2DAE48EFABF3004DB8FD52D6 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WijekoonWHMCB-COBSCCOMP191P-006.release.xcconfig"; path = "Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006/Pods-WijekoonWHMCB-COBSCCOMP191P-006.release.xcconfig"; sourceTree = "<group>"; };
+		2ECA345B902DCBD77DF7149E /* Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0E5D877E2EEC315F7CC45E /* Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.debug.xcconfig"; path = "Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests/Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A8A9E4DA3AB43D2427EC6AA /* Pods_WijekoonWHMCB_COBSCCOMP191P_006.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WijekoonWHMCB_COBSCCOMP191P_006.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4FD40D54E42956BCE82048 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.debug.xcconfig"; path = "Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAF563D7547CFA2306308858 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.release.xcconfig"; path = "Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.release.xcconfig"; sourceTree = "<group>"; };
+		F2669B84573156C9DFD0A568 /* Pods_WijekoonWHMCB_COBSCCOMP191P_006Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WijekoonWHMCB_COBSCCOMP191P_006Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F944461E176B455257525C6B /* Pods-WijekoonWHMCB-COBSCCOMP191P-006.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WijekoonWHMCB-COBSCCOMP191P-006.debug.xcconfig"; path = "Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006/Pods-WijekoonWHMCB-COBSCCOMP191P-006.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10364F8669F7BF222EC52E05 /* Pods_WijekoonWHMCB_COBSCCOMP191P_006.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7991125A2AFF5EECB16DCD /* Pods_WijekoonWHMCB_COBSCCOMP191P_006Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +99,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45ECA8C1DC925696F3AC5CDD /* Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10615165E8ECB0809997A28D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F944461E176B455257525C6B /* Pods-WijekoonWHMCB-COBSCCOMP191P-006.debug.xcconfig */,
+				2DAE48EFABF3004DB8FD52D6 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006.release.xcconfig */,
+				9F4FD40D54E42956BCE82048 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.debug.xcconfig */,
+				AAF563D7547CFA2306308858 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.release.xcconfig */,
+				3F0E5D877E2EEC315F7CC45E /* Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.debug.xcconfig */,
+				26A497FA2A787378455FC780 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1136D2722513896400E71ECF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +135,8 @@
 				115587F125125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006Tests */,
 				115587FC25125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006UITests */,
 				115587D625125DAB0000C497 /* Products */,
+				10615165E8ECB0809997A28D /* Pods */,
+				53ECB496475C6F684551F9C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +161,7 @@
 				115587E425125DAD0000C497 /* Assets.xcassets */,
 				115587E625125DAD0000C497 /* LaunchScreen.storyboard */,
 				115587E925125DAD0000C497 /* Info.plist */,
+				1136D2822514FF8600E71ECF /* GoogleService-Info.plist */,
 				115587E125125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodeld */,
 			);
 			path = "WijekoonWHMCB-COBSCCOMP191P-006";
@@ -173,6 +206,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		53ECB496475C6F684551F9C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A8A9E4DA3AB43D2427EC6AA /* Pods_WijekoonWHMCB_COBSCCOMP191P_006.framework */,
+				2ECA345B902DCBD77DF7149E /* Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework */,
+				F2669B84573156C9DFD0A568 /* Pods_WijekoonWHMCB_COBSCCOMP191P_006Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1155880225125DAD0000C497 /* Build configuration list for PBXNativeTarget "WijekoonWHMCB-COBSCCOMP191P-006" */;
 			buildPhases = (
+				D3C7175F206E9CF89938291C /* [CP] Check Pods Manifest.lock */,
 				115587D125125DAB0000C497 /* Sources */,
 				115587D225125DAB0000C497 /* Frameworks */,
 				115587D325125DAB0000C497 /* Resources */,
+				D20F2A6B67FAB0B302009ADD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1155880525125DAD0000C497 /* Build configuration list for PBXNativeTarget "WijekoonWHMCB-COBSCCOMP191P-006Tests" */;
 			buildPhases = (
+				0A3F64E361348AC46C95D2C2 /* [CP] Check Pods Manifest.lock */,
 				115587EA25125DAD0000C497 /* Sources */,
 				115587EB25125DAD0000C497 /* Frameworks */,
 				115587EC25125DAD0000C497 /* Resources */,
@@ -215,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1155880825125DAD0000C497 /* Build configuration list for PBXNativeTarget "WijekoonWHMCB-COBSCCOMP191P-006UITests" */;
 			buildPhases = (
+				FCD8F73665FD1143218BC978 /* [CP] Check Pods Manifest.lock */,
 				115587F525125DAD0000C497 /* Sources */,
 				115587F625125DAD0000C497 /* Frameworks */,
 				115587F725125DAD0000C497 /* Resources */,
+				33D1CA7312DE5F11811C99B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +346,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3F64E361348AC46C95D2C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33D1CA7312DE5F11811C99B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D20F2A6B67FAB0B302009ADD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006/Pods-WijekoonWHMCB-COBSCCOMP191P-006-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006/Pods-WijekoonWHMCB-COBSCCOMP191P-006-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006/Pods-WijekoonWHMCB-COBSCCOMP191P-006-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3C7175F206E9CF89938291C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WijekoonWHMCB-COBSCCOMP191P-006-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCD8F73665FD1143218BC978 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		115587D125125DAB0000C497 /* Sources */ = {
@@ -484,6 +635,7 @@
 		};
 		1155880325125DAD0000C497 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F944461E176B455257525C6B /* Pods-WijekoonWHMCB-COBSCCOMP191P-006.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +654,7 @@
 		};
 		1155880425125DAD0000C497 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DAE48EFABF3004DB8FD52D6 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +673,7 @@
 		};
 		1155880625125DAD0000C497 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0E5D877E2EEC315F7CC45E /* Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -542,6 +696,7 @@
 		};
 		1155880725125DAD0000C497 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A497FA2A787378455FC780 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,6 +719,7 @@
 		};
 		1155880925125DAD0000C497 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4FD40D54E42956BCE82048 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +740,7 @@
 		};
 		1155880A25125DAD0000C497 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAF563D7547CFA2306308858 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006-WijekoonWHMCB-COBSCCOMP191P-006UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
