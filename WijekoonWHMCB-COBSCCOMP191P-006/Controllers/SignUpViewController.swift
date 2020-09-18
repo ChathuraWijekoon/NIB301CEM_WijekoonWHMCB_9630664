@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
+    
+    let db = Firestore.firestore()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,30 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var roleSelector: UISegmentedControl!
     
     @IBAction func btnSignUp(_ sender: Any) {
+        let email = txtEmail.text!
+        let password = txtPassword.text!
+        print(email)
+        print(password)
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let err = error {
+                print(err)
+                return
+            }
+            self.db.collection("users").addDocument(data: [
+                "name": self.txtName.text!,
+                "address": self.txtAddress.text!,
+                "email": email,
+                "role": "user"
+            ]) { err in
+                if let err = err {
+                    print("Error adding document: \(err)")
+                } else {
+                    print("Document added with ID")
+                    self.performSegue(withIdentifier: "signUpToTemp", sender: self)
+                }
+            }
+            
+        }
     }
     
     
