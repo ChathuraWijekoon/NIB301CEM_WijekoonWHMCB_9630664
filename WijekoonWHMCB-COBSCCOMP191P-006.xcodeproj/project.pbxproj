@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1136D2742513898D00E71ECF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D2732513898D00E71ECF /* CustomButton.swift */; };
+		115587D925125DAB0000C497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587D825125DAB0000C497 /* AppDelegate.swift */; };
+		115587DB25125DAB0000C497 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587DA25125DAB0000C497 /* SceneDelegate.swift */; };
+		115587DD25125DAB0000C497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587DC25125DAB0000C497 /* ViewController.swift */; };
+		115587E025125DAB0000C497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115587DE25125DAB0000C497 /* Main.storyboard */; };
+		115587E325125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 115587E125125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodeld */; };
+		115587E525125DAD0000C497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115587E425125DAD0000C497 /* Assets.xcassets */; };
+		115587E825125DAD0000C497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115587E625125DAD0000C497 /* LaunchScreen.storyboard */; };
+		115587F325125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587F225125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006Tests.swift */; };
+		115587FE25125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587FD25125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		115587EF25125DAD0000C497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 115587CD25125DAB0000C497 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 115587D425125DAB0000C497;
+			remoteInfo = "WijekoonWHMCB-COBSCCOMP191P-006";
+		};
+		115587FA25125DAD0000C497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 115587CD25125DAB0000C497 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 115587D425125DAB0000C497;
+			remoteInfo = "WijekoonWHMCB-COBSCCOMP191P-006";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1136D2732513898D00E71ECF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		115587D525125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WijekoonWHMCB-COBSCCOMP191P-006.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		115587D825125DAB0000C497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		115587DA25125DAB0000C497 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		115587DC25125DAB0000C497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		115587DF25125DAB0000C497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		115587E225125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodel; sourceTree = "<group>"; };
+		115587E425125DAD0000C497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		115587E725125DAD0000C497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		115587E925125DAD0000C497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115587EE25125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WijekoonWHMCB-COBSCCOMP191P-006Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		115587F225125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WijekoonWHMCB_COBSCCOMP191P_006Tests.swift; sourceTree = "<group>"; };
+		115587F425125DAD0000C497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115587F925125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WijekoonWHMCB-COBSCCOMP191P-006UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		115587FD25125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WijekoonWHMCB_COBSCCOMP191P_006UITests.swift; sourceTree = "<group>"; };
+		115587FF25125DAD0000C497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		115587D225125DAB0000C497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115587EB25125DAD0000C497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115587F625125DAD0000C497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1136D2722513896400E71ECF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1136D2732513898D00E71ECF /* CustomButton.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		115587CC25125DAB0000C497 = {
+			isa = PBXGroup;
+			children = (
+				115587D725125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006 */,
+				115587F125125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006Tests */,
+				115587FC25125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006UITests */,
+				115587D625125DAB0000C497 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		115587D625125DAB0000C497 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				115587D525125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006.app */,
+				115587EE25125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006Tests.xctest */,
+				115587F925125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		115587D725125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006 */ = {
+			isa = PBXGroup;
+			children = (
+				1136D2722513896400E71ECF /* Utils */,
+				115587D825125DAB0000C497 /* AppDelegate.swift */,
+				115587DA25125DAB0000C497 /* SceneDelegate.swift */,
+				1155880E2512661E0000C497 /* Controllers */,
+				1155880D251266120000C497 /* Views */,
+				115587E425125DAD0000C497 /* Assets.xcassets */,
+				115587E625125DAD0000C497 /* LaunchScreen.storyboard */,
+				115587E925125DAD0000C497 /* Info.plist */,
+				115587E125125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodeld */,
+			);
+			path = "WijekoonWHMCB-COBSCCOMP191P-006";
+			sourceTree = "<group>";
+		};
+		115587F125125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006Tests */ = {
+			isa = PBXGroup;
+			children = (
+				115587F225125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006Tests.swift */,
+				115587F425125DAD0000C497 /* Info.plist */,
+			);
+			path = "WijekoonWHMCB-COBSCCOMP191P-006Tests";
+			sourceTree = "<group>";
+		};
+		115587FC25125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006UITests */ = {
+			isa = PBXGroup;
+			children = (
+				115587FD25125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006UITests.swift */,
+				115587FF25125DAD0000C497 /* Info.plist */,
+			);
+			path = "WijekoonWHMCB-COBSCCOMP191P-006UITests";
+			sourceTree = "<group>";
+		};
+		1155880D251266120000C497 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				115587DE25125DAB0000C497 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1155880E2512661E0000C497 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				115587DC25125DAB0000C497 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		115587D425125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1155880225125DAD0000C497 /* Build configuration list for PBXNativeTarget "WijekoonWHMCB-COBSCCOMP191P-006" */;
+			buildPhases = (
+				115587D125125DAB0000C497 /* Sources */,
+				115587D225125DAB0000C497 /* Frameworks */,
+				115587D325125DAB0000C497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WijekoonWHMCB-COBSCCOMP191P-006";
+			productName = "WijekoonWHMCB-COBSCCOMP191P-006";
+			productReference = 115587D525125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006.app */;
+			productType = "com.apple.product-type.application";
+		};
+		115587ED25125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1155880525125DAD0000C497 /* Build configuration list for PBXNativeTarget "WijekoonWHMCB-COBSCCOMP191P-006Tests" */;
+			buildPhases = (
+				115587EA25125DAD0000C497 /* Sources */,
+				115587EB25125DAD0000C497 /* Frameworks */,
+				115587EC25125DAD0000C497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				115587F025125DAD0000C497 /* PBXTargetDependency */,
+			);
+			name = "WijekoonWHMCB-COBSCCOMP191P-006Tests";
+			productName = "WijekoonWHMCB-COBSCCOMP191P-006Tests";
+			productReference = 115587EE25125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		115587F825125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1155880825125DAD0000C497 /* Build configuration list for PBXNativeTarget "WijekoonWHMCB-COBSCCOMP191P-006UITests" */;
+			buildPhases = (
+				115587F525125DAD0000C497 /* Sources */,
+				115587F625125DAD0000C497 /* Frameworks */,
+				115587F725125DAD0000C497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				115587FB25125DAD0000C497 /* PBXTargetDependency */,
+			);
+			name = "WijekoonWHMCB-COBSCCOMP191P-006UITests";
+			productName = "WijekoonWHMCB-COBSCCOMP191P-006UITests";
+			productReference = 115587F925125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		115587CD25125DAB0000C497 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Chathura Wijekoon";
+				TargetAttributes = {
+					115587D425125DAB0000C497 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					115587ED25125DAD0000C497 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 115587D425125DAB0000C497;
+					};
+					115587F825125DAD0000C497 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 115587D425125DAB0000C497;
+					};
+				};
+			};
+			buildConfigurationList = 115587D025125DAB0000C497 /* Build configuration list for PBXProject "WijekoonWHMCB-COBSCCOMP191P-006" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 115587CC25125DAB0000C497;
+			productRefGroup = 115587D625125DAB0000C497 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				115587D425125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006 */,
+				115587ED25125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006Tests */,
+				115587F825125DAD0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		115587D325125DAB0000C497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115587E825125DAD0000C497 /* LaunchScreen.storyboard in Resources */,
+				115587E525125DAD0000C497 /* Assets.xcassets in Resources */,
+				115587E025125DAB0000C497 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115587EC25125DAD0000C497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115587F725125DAD0000C497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		115587D125125DAB0000C497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115587DD25125DAB0000C497 /* ViewController.swift in Sources */,
+				115587D925125DAB0000C497 /* AppDelegate.swift in Sources */,
+				115587DB25125DAB0000C497 /* SceneDelegate.swift in Sources */,
+				115587E325125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodeld in Sources */,
+				1136D2742513898D00E71ECF /* CustomButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115587EA25125DAD0000C497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115587F325125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115587F525125DAD0000C497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115587FE25125DAD0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		115587F025125DAD0000C497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 115587D425125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006 */;
+			targetProxy = 115587EF25125DAD0000C497 /* PBXContainerItemProxy */;
+		};
+		115587FB25125DAD0000C497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 115587D425125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006 */;
+			targetProxy = 115587FA25125DAD0000C497 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		115587DE25125DAB0000C497 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115587DF25125DAB0000C497 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		115587E625125DAD0000C497 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115587E725125DAD0000C497 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1155880025125DAD0000C497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1155880125125DAD0000C497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1155880325125DAD0000C497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYJ23FN796;
+				INFOPLIST_FILE = "WijekoonWHMCB-COBSCCOMP191P-006/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chathura.WijekoonWHMCB-COBSCCOMP191P-006";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1155880425125DAD0000C497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYJ23FN796;
+				INFOPLIST_FILE = "WijekoonWHMCB-COBSCCOMP191P-006/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chathura.WijekoonWHMCB-COBSCCOMP191P-006";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1155880625125DAD0000C497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYJ23FN796;
+				INFOPLIST_FILE = "WijekoonWHMCB-COBSCCOMP191P-006Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chathura.WijekoonWHMCB-COBSCCOMP191P-006Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WijekoonWHMCB-COBSCCOMP191P-006.app/WijekoonWHMCB-COBSCCOMP191P-006";
+			};
+			name = Debug;
+		};
+		1155880725125DAD0000C497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYJ23FN796;
+				INFOPLIST_FILE = "WijekoonWHMCB-COBSCCOMP191P-006Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chathura.WijekoonWHMCB-COBSCCOMP191P-006Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WijekoonWHMCB-COBSCCOMP191P-006.app/WijekoonWHMCB-COBSCCOMP191P-006";
+			};
+			name = Release;
+		};
+		1155880925125DAD0000C497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYJ23FN796;
+				INFOPLIST_FILE = "WijekoonWHMCB-COBSCCOMP191P-006UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chathura.WijekoonWHMCB-COBSCCOMP191P-006UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WijekoonWHMCB-COBSCCOMP191P-006";
+			};
+			name = Debug;
+		};
+		1155880A25125DAD0000C497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYJ23FN796;
+				INFOPLIST_FILE = "WijekoonWHMCB-COBSCCOMP191P-006UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chathura.WijekoonWHMCB-COBSCCOMP191P-006UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WijekoonWHMCB-COBSCCOMP191P-006";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		115587D025125DAB0000C497 /* Build configuration list for PBXProject "WijekoonWHMCB-COBSCCOMP191P-006" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1155880025125DAD0000C497 /* Debug */,
+				1155880125125DAD0000C497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1155880225125DAD0000C497 /* Build configuration list for PBXNativeTarget "WijekoonWHMCB-COBSCCOMP191P-006" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1155880325125DAD0000C497 /* Debug */,
+				1155880425125DAD0000C497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1155880525125DAD0000C497 /* Build configuration list for PBXNativeTarget "WijekoonWHMCB-COBSCCOMP191P-006Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1155880625125DAD0000C497 /* Debug */,
+				1155880725125DAD0000C497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1155880825125DAD0000C497 /* Build configuration list for PBXNativeTarget "WijekoonWHMCB-COBSCCOMP191P-006UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1155880925125DAD0000C497 /* Debug */,
+				1155880A25125DAD0000C497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		115587E125125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				115587E225125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodel */,
+			);
+			currentVersion = 115587E225125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodel */;
+			path = WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 115587CD25125DAB0000C497 /* Project object */;
+}
