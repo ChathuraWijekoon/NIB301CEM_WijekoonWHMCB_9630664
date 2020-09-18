@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1136D2742513898D00E71ECF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D2732513898D00E71ECF /* CustomButton.swift */; };
+		1136D2762514DC8000E71ECF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D2752514DC8000E71ECF /* HomeViewController.swift */; };
+		1136D2782514E05C00E71ECF /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D2772514E05C00E71ECF /* AuthViewController.swift */; };
+		1136D27A2514E0F400E71ECF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D2792514E0F400E71ECF /* SettingsViewController.swift */; };
+		1136D27D2514ECDA00E71ECF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D27C2514ECDA00E71ECF /* SignInViewController.swift */; };
+		1136D27F2514F59B00E71ECF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136D27E2514F59B00E71ECF /* SignUpViewController.swift */; };
 		115587D925125DAB0000C497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587D825125DAB0000C497 /* AppDelegate.swift */; };
 		115587DB25125DAB0000C497 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587DA25125DAB0000C497 /* SceneDelegate.swift */; };
 		115587DD25125DAB0000C497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115587DC25125DAB0000C497 /* ViewController.swift */; };
@@ -38,6 +43,11 @@
 
 /* Begin PBXFileReference section */
 		1136D2732513898D00E71ECF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1136D2752514DC8000E71ECF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1136D2772514E05C00E71ECF /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		1136D2792514E0F400E71ECF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1136D27C2514ECDA00E71ECF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		1136D27E2514F59B00E71ECF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		115587D525125DAB0000C497 /* WijekoonWHMCB-COBSCCOMP191P-006.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WijekoonWHMCB-COBSCCOMP191P-006.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		115587D825125DAB0000C497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115587DA25125DAB0000C497 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +164,11 @@
 			isa = PBXGroup;
 			children = (
 				115587DC25125DAB0000C497 /* ViewController.swift */,
+				1136D2752514DC8000E71ECF /* HomeViewController.swift */,
+				1136D2772514E05C00E71ECF /* AuthViewController.swift */,
+				1136D2792514E0F400E71ECF /* SettingsViewController.swift */,
+				1136D27C2514ECDA00E71ECF /* SignInViewController.swift */,
+				1136D27E2514F59B00E71ECF /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -289,11 +304,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1136D2782514E05C00E71ECF /* AuthViewController.swift in Sources */,
 				115587DD25125DAB0000C497 /* ViewController.swift in Sources */,
 				115587D925125DAB0000C497 /* AppDelegate.swift in Sources */,
 				115587DB25125DAB0000C497 /* SceneDelegate.swift in Sources */,
+				1136D27F2514F59B00E71ECF /* SignUpViewController.swift in Sources */,
 				115587E325125DAB0000C497 /* WijekoonWHMCB_COBSCCOMP191P_006.xcdatamodeld in Sources */,
+				1136D27D2514ECDA00E71ECF /* SignInViewController.swift in Sources */,
 				1136D2742513898D00E71ECF /* CustomButton.swift in Sources */,
+				1136D2762514DC8000E71ECF /* HomeViewController.swift in Sources */,
+				1136D27A2514E0F400E71ECF /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
