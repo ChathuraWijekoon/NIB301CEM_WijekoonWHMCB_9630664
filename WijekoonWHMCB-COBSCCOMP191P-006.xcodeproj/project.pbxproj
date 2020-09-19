@@ -26,6 +26,7 @@
 		116B50ED251505EA000AB82C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 116B50EC251505EA000AB82C /* GoogleService-Info.plist */; };
 		116B50EF25150F34000AB82C /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116B50EE25150F34000AB82C /* TempViewController.swift */; };
 		116B50F125151B90000AB82C /* CustomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116B50F025151B90000AB82C /* CustomSection.swift */; };
+		11AB50BF25162233003A5883 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB50BE25162233003A5883 /* ProfileViewController.swift */; };
 		3C7991125A2AFF5EECB16DCD /* Pods_WijekoonWHMCB_COBSCCOMP191P_006Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2669B84573156C9DFD0A568 /* Pods_WijekoonWHMCB_COBSCCOMP191P_006Tests.framework */; };
 		45ECA8C1DC925696F3AC5CDD /* Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA345B902DCBD77DF7149E /* Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		116B50EC251505EA000AB82C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		116B50EE25150F34000AB82C /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		116B50F025151B90000AB82C /* CustomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSection.swift; sourceTree = "<group>"; };
+		11AB50BE25162233003A5883 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		26A497FA2A787378455FC780 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.release.xcconfig"; path = "Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests/Pods-WijekoonWHMCB-COBSCCOMP191P-006Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2DAE48EFABF3004DB8FD52D6 /* Pods-WijekoonWHMCB-COBSCCOMP191P-006.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WijekoonWHMCB-COBSCCOMP191P-006.release.xcconfig"; path = "Target Support Files/Pods-WijekoonWHMCB-COBSCCOMP191P-006/Pods-WijekoonWHMCB-COBSCCOMP191P-006.release.xcconfig"; sourceTree = "<group>"; };
 		2ECA345B902DCBD77DF7149E /* Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WijekoonWHMCB_COBSCCOMP191P_006_WijekoonWHMCB_COBSCCOMP191P_006UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +210,7 @@
 				1136D27C2514ECDA00E71ECF /* SignInViewController.swift */,
 				1136D27E2514F59B00E71ECF /* SignUpViewController.swift */,
 				116B50EE25150F34000AB82C /* TempViewController.swift */,
+				11AB50BE25162233003A5883 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				1136D27D2514ECDA00E71ECF /* SignInViewController.swift in Sources */,
 				1136D2742513898D00E71ECF /* CustomButton.swift in Sources */,
 				1136D2762514DC8000E71ECF /* HomeViewController.swift in Sources */,
+				11AB50BF25162233003A5883 /* ProfileViewController.swift in Sources */,
 				116B50F125151B90000AB82C /* CustomSection.swift in Sources */,
 				1136D27A2514E0F400E71ECF /* SettingsViewController.swift in Sources */,
 			);

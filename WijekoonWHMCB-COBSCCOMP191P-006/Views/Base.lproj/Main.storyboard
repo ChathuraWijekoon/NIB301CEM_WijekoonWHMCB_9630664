@@ -696,7 +696,7 @@
                     <connections>
                         <segue destination="iul-1H-8yB" kind="relationship" relationship="viewControllers" id="BGO-ZW-6aD"/>
                         <segue destination="JJJ-15-Cno" kind="relationship" relationship="viewControllers" id="5u9-Ar-IYT"/>
-                        <segue destination="TeN-RV-4c5" kind="relationship" relationship="viewControllers" id="lOL-HC-9Zz"/>
+                        <segue destination="1V3-dP-ze5" kind="relationship" relationship="viewControllers" id="lOL-HC-9Zz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bA-mb-iOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -719,7 +719,7 @@
             </objects>
             <point key="canvasLocation" x="-3252" y="840"/>
         </scene>
-        <!--Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="HUU-Mu-rwh">
             <objects>
                 <viewController id="TeN-RV-4c5" customClass="SettingsViewController" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target" sceneMemberID="viewController">
@@ -787,15 +787,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZEF-t3-NUh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="J9v-6Q-HDQ"/>
+                    <navigationItem key="navigationItem" id="EhH-JH-C2m"/>
                     <connections>
                         <outlet property="btnLogoutRef" destination="FqQ-Pa-qPo" id="wiN-do-lpW"/>
                         <outlet property="tblView" destination="9i4-mT-c38" id="UQa-kE-be3"/>
+                        <segue destination="XBf-Tb-Rai" kind="show" identifier="settingsToProfile" id="u7z-pf-FI3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGf-C6-oUA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1830.4347826086957" y="371.65178571428572"/>
+            <point key="canvasLocation" x="-920.28985507246387" y="371.65178571428572"/>
         </scene>
         <!--Temp View Controller-->
         <scene sceneID="9FD-cO-xAP">
@@ -962,12 +963,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBM-je-Nvk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717" y="331"/>
+            <point key="canvasLocation" x="1626.0869565217392" y="330.80357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Ch8-DZ-qVH">
             <objects>
-                <viewController id="XBf-Tb-Rai" sceneMemberID="viewController">
+                <viewController id="XBf-Tb-Rai" customClass="ProfileViewController" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jaw-7d-SA4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1006,6 +1007,9 @@
                                 <state key="normal" title="Update">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnProfileUpdate:" destination="XBf-Tb-Rai" eventType="touchUpInside" id="sBR-hv-W3q"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oH3-mS-vkN">
                                 <rect key="frame" x="127" y="75" width="161" height="161"/>
@@ -1015,10 +1019,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mCW-D6-f9p"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ioV-Xp-t4H"/>
+                    <connections>
+                        <outlet property="imgProPic" destination="oH3-mS-vkN" id="5cd-7t-Oe5"/>
+                        <outlet property="lblCurrentTemp" destination="SxP-Qi-oo6" id="0ko-pR-Sk8"/>
+                        <outlet property="lblUserSince" destination="DEr-wF-MPn" id="5gK-OD-xbL"/>
+                        <outlet property="txtUserAddress" destination="Eqe-Jj-Vwa" id="ZQI-4Y-Ed4"/>
+                        <outlet property="txtUserName" destination="CnC-8J-j44" id="b1G-0B-UX4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkQ-Uo-zFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746.37681159420299" y="1012.5"/>
+            <point key="canvasLocation" x="163.768115942029" y="1012.5"/>
         </scene>
         <!--Update-->
         <scene sceneID="s7E-r7-KIL">
@@ -1038,6 +1050,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnh-Cd-d2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1830.4347826086957" y="-413.16964285714283"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="zXH-Fs-39I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1V3-dP-ze5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="J9v-6Q-HDQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oJ0-lu-kJt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TeN-RV-4c5" kind="relationship" relationship="rootViewController" id="zvF-wZ-KxS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K47-2b-z2r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1830.4347826086957" y="371.65178571428572"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

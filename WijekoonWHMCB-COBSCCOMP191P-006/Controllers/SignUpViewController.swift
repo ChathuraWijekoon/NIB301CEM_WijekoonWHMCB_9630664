@@ -48,7 +48,8 @@ class SignUpViewController: UIViewController {
                 "name": self.txtName.text!,
                 "address": self.txtAddress.text!,
                 "email": email,
-                "role": "user"
+                "role": "user",
+                "createdOn": Date()
             ]) { err in
                 if let err = err {
                     print("Error adding document: \(err)")

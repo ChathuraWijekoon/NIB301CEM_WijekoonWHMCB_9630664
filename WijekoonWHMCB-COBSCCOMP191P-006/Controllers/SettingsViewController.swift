@@ -58,6 +58,9 @@ class SettingsViewController: UIViewController {
 extension SettingsViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
+        if indexPath.row == 0 {
+            performSegue(withIdentifier: "settingsToProfile", sender: self)
+        }
     }
 }
 
