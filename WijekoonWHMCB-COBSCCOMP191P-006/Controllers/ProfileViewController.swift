@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imgProPic: UIImageView!
     @IBOutlet weak var lblUserSince: UILabel!
@@ -19,13 +19,20 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var txtUserAddress: UITextField!
     
     let db = Firestore.firestore()
+    let storage = Storage.storage().reference()
     
     var documentId = ""
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadUser()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let profileImageViewAction = UITapGestureRecognizer(target: self, action: #selector(imageUIViewAction(_:)))
+        imgProPic.isUserInteractionEnabled = true
+        imgProPic.addGestureRecognizer(profileImageViewAction)
     }
     
     func loadUser() {
@@ -71,14 +78,65 @@ class ProfileViewController: UIViewController {
                 }
             }
         }
-
+        
+    }
+    
+    @objc func imageUIViewAction(_ sender:UITapGestureRecognizer){
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        picker.allowsEditing = true
+        present(picker, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
+            return
+        }
+        guard let imageData = image.pngData() else {
+            return
+        }
+        
+        if let uid = Auth.auth().currentUser?.uid {
+            
+            let ref = "images/\(uid).png"
+            
+            storage.child(ref).putData(imageData, metadata: nil, completion: { _, error in
+                if let e = error {
+                    print(e)
+                }
+                self.storage.child(ref).downloadURL { (url, error) in
+                guard let url = url, error == nil else {
+                    return
+                }
+                
+                let urlString = url.absoluteString
+                    
+                    self.db.collection("users").document(self.documentId).updateData(["profileImage": urlString])
+                    
+                    let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
+                        guard let data = data, error == nil else {
+                            return
+                        }
+                        
+                        DispatchQueue.main.async {
+                            let image = UIImage(data: data)
+                            self.imgProPic.image = image
+                        }
+                    }
+                    
+                    task.resume()
+                }
+            })
+        }
     }
 }
 
 
 
 extension Date {
-   func getFormattedDate(format: String) -> String {
+    func getFormattedDate(format: String) -> String {
         let dateformat = DateFormatter()
         dateformat.dateFormat = format
         return dateformat.string(from: self)

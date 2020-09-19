@@ -8,6 +8,7 @@ target 'WijekoonWHMCB-COBSCCOMP191P-006' do
   # Pods for WijekoonWHMCB-COBSCCOMP191P-006
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
 
   target 'WijekoonWHMCB-COBSCCOMP191P-006Tests' do
     inherit! :search_paths
