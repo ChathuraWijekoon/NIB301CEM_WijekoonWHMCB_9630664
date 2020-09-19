@@ -7,24 +7,79 @@
 //
 
 import UIKit
+import Firebase
 
 class TempViewController: UIViewController {
-
+    
+    @IBOutlet weak var lblTemp: UILabel!
+    @IBOutlet weak var lblTime: UILabel!
+    @IBOutlet weak var txtUpdateTemp: UITextField!
+    
+    let db = Firestore.firestore()
+    
+    var documentId = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        loadUser()
+        
+        if Auth.auth().currentUser == nil {
+            navigationController?.popViewController(animated: true)
+        }
     }
-    */
-
+    
+    @IBAction func btnCloseTemp(_ sender: Any) {
+         tabBarController?.selectedIndex = 0
+        //navigationController?.popViewController(animated: true)
+    }
+    
+    func loadUser() {
+        lblTemp.text = "Fetching....."
+        lblTime.text = "Fetching....."
+        
+        if let email = Auth.auth().currentUser?.email {
+            db.collection("users").whereField("email", isEqualTo: email)
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        let document = querySnapshot!.documents[0]
+                        
+                        self.documentId = document.documentID
+                        
+                        if let temp = document.data()["temp"], let lastModified = document.data()["lastModified"] {
+                            if let timestamp = lastModified as? Timestamp, let tempC = temp as? String {
+                                self.lblTime.text = "\(timestamp.dateValue())"
+                                self.lblTemp.text = "\(tempC) C"
+                            }
+                        } else {
+                            self.lblTemp.text = "Not Updated"
+                            self.lblTemp.text = "Not Updated"
+                        }
+                    }
+            }
+        }
+    }
+    
+ 
+    
+    
+    
+    @IBAction func updateTemp(_ sender: Any) {
+        if documentId != "", let temp = txtUpdateTemp.text {
+            db.collection("users").document(documentId).updateData(["temp": temp, "lastModified": Date()]) {error in
+                if let err = error {
+                    print(err)
+                    return
+                }
+                self.lblTemp.text = "\(temp) C"
+                self.lblTime.text = "\(Date())"
+                self.txtUpdateTemp.text = ""
+            }
+        }
+    }
+    
 }
