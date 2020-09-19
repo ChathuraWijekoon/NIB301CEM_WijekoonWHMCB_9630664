@@ -10,11 +10,33 @@ import UIKit
 import Firebase
 
 class SettingsViewController: UIViewController {
+    
+    @IBOutlet weak var btnLogoutRef: CustomButton!
+    
+    @IBOutlet weak var tblView: UITableView!
+    
+    var settingCells = [
+        "Profile",
+        "Contact Us",
+        "Share with Friend",
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tabBarController?.tabBar.isHidden = true
+        
+        tblView.delegate = self
+        tblView.dataSource = self
+        tblView.tableFooterView = UIView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.tabBar.isHidden = true
+        if Auth.auth().currentUser == nil{
+            btnLogoutRef.isHidden = true
+        }
+        
     }
     
     @IBAction func closeButtonClicked(_ sender: Any) {
@@ -31,16 +53,22 @@ class SettingsViewController: UIViewController {
         }
           
     }
-    
-    
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SettingsViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
     }
-    */
+}
 
+extension SettingsViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return settingCells.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath)
+        cell.textLabel?.text = settingCells[indexPath.row]
+        return cell
+    }
 }

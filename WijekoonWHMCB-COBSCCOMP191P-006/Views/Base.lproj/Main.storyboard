@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="3s5-tU-PnT" customClass="SignUpViewController" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rga-YD-bfS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dy-tw-K1B">
-                                <rect key="frame" x="20" y="109" width="374" height="57"/>
+                                <rect key="frame" x="20" y="197" width="374" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="4an-TT-WAk"/>
                                     <constraint firstAttribute="height" constant="57" id="Fjl-bN-cCM"/>
@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DVa-nd-tjM">
-                                <rect key="frame" x="20" y="203" width="374" height="34"/>
+                                <rect key="frame" x="20" y="291" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="VZ0-Uy-2vI"/>
                                     <constraint firstAttribute="height" constant="34" id="bak-CX-pVB"/>
@@ -35,7 +35,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lEF-88-cQp">
-                                <rect key="frame" x="20" y="245" width="374" height="34"/>
+                                <rect key="frame" x="20" y="333" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="YlX-cR-Ef9"/>
                                     <constraint firstAttribute="width" constant="374" id="uE8-FM-Pes"/>
@@ -44,7 +44,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MNm-UJ-FGW">
-                                <rect key="frame" x="20" y="287" width="374" height="34"/>
+                                <rect key="frame" x="20" y="375" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="8yM-XX-cfp"/>
                                     <constraint firstAttribute="height" constant="34" id="vXB-OG-37j"/>
@@ -53,7 +53,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="whI-eM-4kr">
-                                <rect key="frame" x="20" y="371" width="374" height="32"/>
+                                <rect key="frame" x="20" y="459" width="374" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="vO0-dm-07S"/>
                                     <constraint firstAttribute="height" constant="31" id="xZ5-6l-iIi"/>
@@ -64,7 +64,7 @@
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="niv-EK-BVD">
-                                <rect key="frame" x="20" y="329" width="374" height="34"/>
+                                <rect key="frame" x="20" y="417" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="84V-Jl-ORc"/>
                                     <constraint firstAttribute="height" constant="34" id="gRc-1b-H1b"/>
@@ -73,7 +73,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjX-ep-AYW" customClass="CustomButton" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
-                                <rect key="frame" x="20" y="440" width="374" height="48"/>
+                                <rect key="frame" x="20" y="528" width="374" height="48"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Kf5-k4-gkq"/>
@@ -88,7 +88,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up you agree with the Terms of Services and Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i42-gz-UiR">
-                                <rect key="frame" x="20" y="515" width="374" height="48"/>
+                                <rect key="frame" x="20" y="603" width="374" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="hB1-iP-dyH"/>
                                     <constraint firstAttribute="height" constant="48" id="n8k-1s-QEM"/>
@@ -98,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9y-M6-wqv" customClass="CustomButton" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
-                                <rect key="frame" x="20" y="602" width="374" height="52"/>
+                                <rect key="frame" x="20" y="690" width="374" height="52"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="PzE-k9-tN6"/>
@@ -113,7 +113,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfD-2N-Mgf">
-                                <rect key="frame" x="349" y="12.5" width="45" height="45"/>
+                                <rect key="frame" x="349" y="100.5" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46.5" id="anb-vr-6X4"/>
                                     <constraint firstAttribute="width" constant="45" id="bSM-lg-rAm"/>
@@ -174,18 +174,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDa-ZF-9oS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="-413"/>
+            <point key="canvasLocation" x="1244.9275362318842" y="-413.16964285714283"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="I2V-BW-A2h">
             <objects>
                 <viewController id="YBo-SI-Hv6" customClass="SignInViewController" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zBh-4y-DrF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signing with Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOS-tp-pIm">
-                                <rect key="frame" x="20" y="111" width="374" height="63"/>
+                                <rect key="frame" x="20" y="199" width="374" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="fwh-kV-w9b"/>
                                     <constraint firstAttribute="width" constant="374" id="whZ-Dw-Zhk"/>
@@ -195,7 +195,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DWg-Eq-aWu">
-                                <rect key="frame" x="20" y="200" width="374" height="34"/>
+                                <rect key="frame" x="20" y="288" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="NGG-Xw-paw"/>
                                     <constraint firstAttribute="width" constant="374" id="U39-WB-UVo"/>
@@ -204,7 +204,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gvh-wo-QSY">
-                                <rect key="frame" x="20" y="242" width="374" height="34"/>
+                                <rect key="frame" x="20" y="330" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Wgh-Ty-2Sa"/>
                                     <constraint firstAttribute="width" constant="374" id="qGO-Rq-TIR"/>
@@ -213,7 +213,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-A6-pUu" customClass="CustomButton" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
-                                <rect key="frame" x="20" y="298" width="374" height="52"/>
+                                <rect key="frame" x="20" y="386" width="374" height="52"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="FSr-iz-fGU"/>
@@ -228,7 +228,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyH-9k-lCj" customClass="CustomButton" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
-                                <rect key="frame" x="20" y="358" width="374" height="52"/>
+                                <rect key="frame" x="20" y="446" width="374" height="52"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="AJj-WR-RTQ"/>
@@ -243,7 +243,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-PB-tdg">
-                                <rect key="frame" x="349" y="20.5" width="45" height="45"/>
+                                <rect key="frame" x="349" y="108.5" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46.5" id="936-k2-w3B"/>
                                     <constraint firstAttribute="width" constant="45" id="Xix-me-iuo"/>
@@ -290,9 +290,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QXL-cN-wpk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-710.14492753623199" y="-413.16964285714283"/>
+            <point key="canvasLocation" x="200.00000000000003" y="-413.16964285714283"/>
         </scene>
-        <!--Update-->
+        <!--Auth View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AuthViewController" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target" sceneMemberID="viewController">
@@ -301,7 +301,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gr-UE-aUm" customClass="CustomButton" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
-                                <rect key="frame" x="70" y="515" width="275" height="71"/>
+                                <rect key="frame" x="70" y="559" width="275" height="71"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="bLr-rv-ErG"/>
@@ -316,7 +316,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUP-Hy-bUn">
-                                <rect key="frame" x="20" y="604" width="374" height="42"/>
+                                <rect key="frame" x="20" y="648" width="374" height="42"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="6Zb-ZP-EpQ"/>
@@ -334,7 +334,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQq-r2-1WY">
-                                <rect key="frame" x="349" y="62.5" width="45" height="45"/>
+                                <rect key="frame" x="349" y="106.5" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="Vqq-jQ-lfF"/>
                                     <constraint firstAttribute="height" constant="46.5" id="g7y-O1-j3w"/>
@@ -348,7 +348,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="u1z-nQ-gWa">
-                                <rect key="frame" x="0.0" y="128" width="414" height="349"/>
+                                <rect key="frame" x="0.0" y="172" width="414" height="349"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="349" id="r3x-Qy-fAT"/>
                                     <constraint firstAttribute="width" constant="414" id="z5v-oQ-YNm"/>
@@ -372,11 +372,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Update" image="plus.app" catalog="system" id="WZj-o0-tkJ"/>
+                    <navigationItem key="navigationItem" id="ZnT-fG-5sG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1830.4347826086957" y="-413.16964285714283"/>
+            <point key="canvasLocation" x="-920.28985507246387" y="-413.16964285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LIE-Bd-RPL">
@@ -695,7 +695,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="iul-1H-8yB" kind="relationship" relationship="viewControllers" id="BGO-ZW-6aD"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="5u9-Ar-IYT"/>
+                        <segue destination="JJJ-15-Cno" kind="relationship" relationship="viewControllers" id="5u9-Ar-IYT"/>
                         <segue destination="TeN-RV-4c5" kind="relationship" relationship="viewControllers" id="lOL-HC-9Zz"/>
                     </connections>
                 </tabBarController>
@@ -754,6 +754,30 @@
                                     <action selector="btnLogout:" destination="TeN-RV-4c5" eventType="touchUpInside" id="f9U-16-qnb"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9i4-mT-c38">
+                                <rect key="frame" x="0.0" y="88" width="414" height="631"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SettingCell" textLabel="8jn-5l-GqS" style="IBUITableViewCellStyleDefault" id="qMM-6P-0W0">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qMM-6P-0W0" id="bYH-0r-8qF">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8jn-5l-GqS">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -764,6 +788,10 @@
                         <viewLayoutGuide key="safeArea" id="ZEF-t3-NUh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="J9v-6Q-HDQ"/>
+                    <connections>
+                        <outlet property="btnLogoutRef" destination="FqQ-Pa-qPo" id="wiN-do-lpW"/>
+                        <outlet property="tblView" destination="9i4-mT-c38" id="UQa-kE-be3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGf-C6-oUA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -774,11 +802,11 @@
             <objects>
                 <viewController id="rz7-FT-Jyu" customClass="TempViewController" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lDK-op-WIq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDA-FV-YIi" customClass="CustomSection" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
-                                <rect key="frame" x="20" y="143" width="374" height="70"/>
+                                <rect key="frame" x="20" y="231" width="374" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fo-u2-zYC">
                                         <rect key="frame" x="8" y="23" width="163" height="24"/>
@@ -795,7 +823,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nW2-QU-j6x" customClass="CustomSection" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
-                                <rect key="frame" x="20" y="242" width="374" height="70"/>
+                                <rect key="frame" x="20" y="330" width="374" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdG-cB-pIj">
                                         <rect key="frame" x="8" y="23" width="105" height="24"/>
@@ -812,7 +840,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUu-jS-0Yr" customClass="CustomSection" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
-                                <rect key="frame" x="20" y="386" width="374" height="310"/>
+                                <rect key="frame" x="20" y="474" width="374" height="310"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JQ-iN-95t">
                                         <rect key="frame" x="8" y="8" width="358" height="100"/>
@@ -881,7 +909,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create +" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcf-bj-jfd">
-                                <rect key="frame" x="20" y="20" width="257" height="90"/>
+                                <rect key="frame" x="20" y="108" width="257" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="C7D-ux-jCI"/>
                                     <constraint firstAttribute="width" constant="257" id="hap-76-3pd"/>
@@ -891,7 +919,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIW-PJ-tnK" customClass="CustomButton" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
-                                <rect key="frame" x="348" y="48" width="46" height="34"/>
+                                <rect key="frame" x="348" y="136" width="46" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Ub4-jE-VMF"/>
@@ -934,7 +962,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBM-je-Nvk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-536.231884057971" y="347.54464285714283"/>
+            <point key="canvasLocation" x="717" y="331"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ch8-DZ-qVH">
+            <objects>
+                <viewController id="XBf-Tb-Rai" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jaw-7d-SA4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEr-wF-MPn">
+                                <rect key="frame" x="20" y="277" width="374" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxP-Qi-oo6">
+                                <rect key="frame" x="20" y="336" width="374" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CnC-8J-j44">
+                                <rect key="frame" x="20" y="412" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eqe-Jj-Vwa">
+                                <rect key="frame" x="20" y="454" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHq-ah-4vp" customClass="CustomButton" customModule="WijekoonWHMCB_COBSCCOMP191P_006" customModuleProvider="target">
+                                <rect key="frame" x="20" y="747" width="374" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oH3-mS-vkN">
+                                <rect key="frame" x="127" y="75" width="161" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mCW-D6-f9p"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WkQ-Uo-zFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746.37681159420299" y="1012.5"/>
+        </scene>
+        <!--Update-->
+        <scene sceneID="s7E-r7-KIL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JJJ-15-Cno" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Update" image="plus.app" catalog="system" id="WZj-o0-tkJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c1b-17-HF3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tA0-cx-OmN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lnh-Cd-d2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1830.4347826086957" y="-413.16964285714283"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

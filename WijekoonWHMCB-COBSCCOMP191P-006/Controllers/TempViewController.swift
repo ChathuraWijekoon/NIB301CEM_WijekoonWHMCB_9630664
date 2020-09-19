@@ -32,8 +32,11 @@ class TempViewController: UIViewController {
     }
     
     @IBAction func btnCloseTemp(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        //navigationController?.popViewController(animated: true)
          tabBarController?.selectedIndex = 0
+//        self.dismiss(animated: true, completion: nil)
+//        navigationController?.popToRootViewController(animated: true)
+        print("test")
     }
     
     func loadUser() {
@@ -77,5 +80,4 @@ class TempViewController: UIViewController {
             }
         }
     }
-    
 }
