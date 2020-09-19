@@ -21,6 +21,6 @@ class CustomSection: UIButton {
     }
     
     private func setupSection() {
-        layer.cornerRadius = frame.size.height/4
+        layer.cornerRadius = frame.size.height/12
     }
 }

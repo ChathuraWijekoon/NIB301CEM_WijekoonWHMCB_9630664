@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsViewController: UIViewController {
 
@@ -19,6 +20,18 @@ class SettingsViewController: UIViewController {
     @IBAction func closeButtonClicked(_ sender: Any) {
         tabBarController?.selectedIndex = 0
     }
+    
+    @IBAction func btnLogout(_ sender: Any) {
+            let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+            tabBarController?.selectedIndex = 0
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+          
+    }
+    
     
     /*
     // MARK: - Navigation

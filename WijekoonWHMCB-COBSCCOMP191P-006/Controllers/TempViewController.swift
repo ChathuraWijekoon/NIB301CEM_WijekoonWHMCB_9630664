@@ -32,8 +32,8 @@ class TempViewController: UIViewController {
     }
     
     @IBAction func btnCloseTemp(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
          tabBarController?.selectedIndex = 0
-        //navigationController?.popViewController(animated: true)
     }
     
     func loadUser() {
@@ -63,11 +63,7 @@ class TempViewController: UIViewController {
             }
         }
     }
-    
- 
-    
-    
-    
+
     @IBAction func updateTemp(_ sender: Any) {
         if documentId != "", let temp = txtUpdateTemp.text {
             db.collection("users").document(documentId).updateData(["temp": temp, "lastModified": Date()]) {error in
