@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthViewController: UIViewController {
     
@@ -16,18 +17,13 @@ class AuthViewController: UIViewController {
         tabBarController?.tabBar.isHidden = true
     }
     
-    @IBAction func closeButtonClicked(_ sender: Any) {
-        tabBarController?.selectedIndex = 0
+    override func viewWillAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "authToTempUpdate", sender: self)
+        }
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    @IBAction func btnClose(_ sender: Any) {
+        tabBarController?.selectedIndex = 0
+    }
 }

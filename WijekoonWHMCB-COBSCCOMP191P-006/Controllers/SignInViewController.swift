@@ -21,10 +21,10 @@ class SignInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func signInClose(_ sender: Any) {
-        self.dismiss(animated: true) {
-        }
+    @IBAction func btnClose(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
+    
     
     @IBAction func signIn(_ sender: Any) {
         let email = txtEmail.text!

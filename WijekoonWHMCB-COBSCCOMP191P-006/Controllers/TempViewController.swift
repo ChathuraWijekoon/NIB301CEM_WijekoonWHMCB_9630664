@@ -34,10 +34,10 @@ class TempViewController: UIViewController {
         }
     }
     
-    @IBAction func btnCloseTemp(_ sender: Any) {
-         tabBarController?.selectedIndex = 0
-        print("test")
+    @IBAction func btnClose(_ sender: Any) {
+        tabBarController?.selectedIndex = 0
     }
+    
     
     func loadUser() {
         lblTemp.text = "Fetching....."

@@ -18,10 +18,10 @@ class SignUpViewController: UIViewController {
         navigationItem.hidesBackButton = true
     }
     
-    @IBAction func signUpClose(_ sender: Any) {
-        self.dismiss(animated: true){
-        }
+    @IBAction func btnClose(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
+    
     
     @IBAction func backToSignIn(_ sender: Any) {
         navigationController?.popViewController(animated: true)

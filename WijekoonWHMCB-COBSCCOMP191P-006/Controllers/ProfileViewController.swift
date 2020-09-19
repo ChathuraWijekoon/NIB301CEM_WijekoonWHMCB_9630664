@@ -46,7 +46,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                         
                         self.documentId = document.documentID
                         
-                        if let name = document.data()["name"] as? String, let address = document.data()["address"] as? String, let userSince = document.data()["createdOn"] as? Timestamp, let bodyTemp = document.data()["temp"] as? String {
+                        if let name = document.data()["name"] as? String, let address = document.data()["address"] as? String, let userSince = document.data()["createdOn"] as? Timestamp {
                             print(document.data())
                             self.navigationItem.title = name as? String
                             
@@ -55,10 +55,13 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                             self.lblUserSince.text = "\(userSince.dateValue().getFormattedDate(format: "MMM yyyy"))"
                             
                             let mf = MeasurementFormatter()
-                            let temp = Measurement(value: Double(bodyTemp) ?? 0, unit: UnitTemperature.celsius)
-                            mf.locale = Locale(identifier: "en_GB")
-                            print(mf.string(from: temp))
-                            self.lblCurrentTemp.text = "\(mf.string(from: temp))"
+                            if let bodyTemp = document.data()["temp"] as? String {
+                                let temp = Measurement(value: Double(bodyTemp) ?? 0, unit: UnitTemperature.celsius)
+                                mf.locale = Locale(identifier: "en_GB")
+                                print(mf.string(from: temp))
+                                self.lblCurrentTemp.text = "\(mf.string(from: temp))"
+                            }
+                            
                         }
                     }
             }
