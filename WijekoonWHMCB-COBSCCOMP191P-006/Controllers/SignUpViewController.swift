@@ -15,6 +15,7 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
     }
     
     @IBAction func signUpClose(_ sender: Any) {

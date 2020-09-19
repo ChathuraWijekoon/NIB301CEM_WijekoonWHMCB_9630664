@@ -24,6 +24,9 @@ class TempViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        navigationItem.hidesBackButton = true
+        
         loadUser()
         
         if Auth.auth().currentUser == nil {
@@ -32,10 +35,7 @@ class TempViewController: UIViewController {
     }
     
     @IBAction func btnCloseTemp(_ sender: Any) {
-        //navigationController?.popViewController(animated: true)
          tabBarController?.selectedIndex = 0
-//        self.dismiss(animated: true, completion: nil)
-//        navigationController?.popToRootViewController(animated: true)
         print("test")
     }
     

@@ -39,9 +39,10 @@ class SettingsViewController: UIViewController {
         
     }
     
-    @IBAction func closeButtonClicked(_ sender: Any) {
+    @IBAction func btnClose(_ sender: Any) {
         tabBarController?.selectedIndex = 0
     }
+    
     
     @IBAction func btnLogout(_ sender: Any) {
             let firebaseAuth = Auth.auth()
