@@ -72,12 +72,5 @@ class ImgSliderViewController: UIViewController, UIScrollViewDelegate{
         let xVal = CGFloat(pageControl.currentPage) * scrollView.frame.size.width
         scrollView.setContentOffset(CGPoint(x: xVal, y: 0), animated: true)
         
-    }    
-
-    @IBAction func btnClose(_ sender: Any) {
-        self.dismiss(animated: true)
-        print("clicked")
     }
-    
-    
 }

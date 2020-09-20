@@ -59,7 +59,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     
     func render(_ location: CLLocation) {
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+        let span = MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         locationView.setRegion(region, animated: true)
         let pin = MKPointAnnotation()
@@ -91,8 +91,9 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func fetchUsers() {
+        print("SSSSSSSSSSS")
         geoPoints = []
-        db.collection("user").addSnapshotListener { (querySnapshot, error) in
+        db.collection("users").addSnapshotListener { (querySnapshot, error) in
             if let e = error {
                 print(e.localizedDescription)
             } else {
@@ -102,10 +103,13 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
                         let data = doc.data()
                         if let geopoint = data["location"] as? GeoPoint {
                             self.geoPoints.append(geopoint)
+                            print(geopoint)
                         }
+                
                     }
                     DispatchQueue.main.async {
                         for i in self.geoPoints{
+                            print(i)
                             if let latitude = i.value(forKey: "latitude"), let longitude = i.value(forKey: "longitude") {
                                 let point = MKPointAnnotation()
 //                                let annotationView = MKMarkerAnnotationView()
@@ -113,6 +117,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
 //                                let point = ColorPointAnnotation(pinColor: .black)
                                 point.coordinate = CLLocationCoordinate2D(latitude: latitude as! CLLocationDegrees, longitude: longitude as! CLLocationDegrees)
                                 self.locationView.addAnnotation(point)
+                                print(point.coordinate.latitude)
                             }
 
                         }
