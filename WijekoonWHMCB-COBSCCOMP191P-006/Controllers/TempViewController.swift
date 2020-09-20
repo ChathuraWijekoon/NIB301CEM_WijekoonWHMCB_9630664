@@ -55,7 +55,7 @@ class TempViewController: UIViewController {
                         
                         if let temp = document.data()["temp"], let lastModified = document.data()["lastModified"] {
                             if let timestamp = lastModified as? Timestamp, let tempC = temp as? String {
-                                self.lblTime.text = "\(timestamp.dateValue())"
+                                self.lblTime.text = "User Since: \(timestamp.dateValue())"
                                 self.lblTemp.text = "\(tempC) C"
                             }
                         } else {

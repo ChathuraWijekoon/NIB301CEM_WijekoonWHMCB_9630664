@@ -52,7 +52,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                             
                             self.txtUserName.text = name
                             self.txtUserAddress.text = address
-                            self.lblUserSince.text = "\(userSince.dateValue().getFormattedDate(format: "MMM yyyy"))"
+                            self.lblUserSince.text = " \(userSince.dateValue().getFormattedDate(format: "MMM yyyy"))"
                             
                             let mf = MeasurementFormatter()
                             if let bodyTemp = document.data()["temp"] as? String {
