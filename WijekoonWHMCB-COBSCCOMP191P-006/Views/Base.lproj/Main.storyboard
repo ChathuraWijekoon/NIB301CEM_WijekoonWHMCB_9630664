@@ -1016,6 +1016,9 @@
                         <viewLayoutGuide key="safeArea" id="1Pr-z6-pKZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="98m-lU-Apw"/>
+                    <connections>
+                        <outlet property="mapView" destination="niP-bM-54N" id="j5R-JG-5x4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0XD-H4-4Af" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

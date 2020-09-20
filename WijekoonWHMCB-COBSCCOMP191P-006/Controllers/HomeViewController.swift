@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import Firebase
+import MapKit
+import CoreLocation
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,8 +25,36 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         tabBarController?.tabBar.isHidden = false
     }
-    
-
+        let locationManager = CLLocationManager()
+                
+        override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            
+            self.tabBarController?.tabBar.isHidden = true
+            
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.delegate = self
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.startUpdatingLocation()
+        }
+        
+        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            if let location = locations.first {
+                locationManager.stopUpdatingLocation()
+                
+                render(location)
+            }
+        }
+        
+        func render(_ location: CLLocation) {
+            let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+            let region = MKCoordinateRegion(center: coordinate, span: span)
+            mapView.setRegion(region, animated: true)
+            let pin = MKPointAnnotation()
+            pin.coordinate = coordinate
+            mapView.addAnnotation(pin)
+        }
     /*
     // MARK: - Navigation
 
@@ -32,3 +66,4 @@ class HomeViewController: UIViewController {
     */
 
 }
+

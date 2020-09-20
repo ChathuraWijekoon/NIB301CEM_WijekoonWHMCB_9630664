@@ -62,5 +62,9 @@
 	</array>
 	<key>NSLocationUsageDescription</key>
 	<string>Allow user locations</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow the location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow the location to use</string>
 </dict>
 </plist>
