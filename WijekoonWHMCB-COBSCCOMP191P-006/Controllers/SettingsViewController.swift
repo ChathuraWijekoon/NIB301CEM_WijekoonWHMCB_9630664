@@ -62,6 +62,9 @@ extension SettingsViewController: UITableViewDelegate{
         if indexPath.row == 0 {
             performSegue(withIdentifier: "settingsToProfile", sender: self)
         }
+        else if indexPath.row == 1 {
+            performSegue(withIdentifier: "settingsToContactUs", sender: self)
+        }
     }
 }
 
