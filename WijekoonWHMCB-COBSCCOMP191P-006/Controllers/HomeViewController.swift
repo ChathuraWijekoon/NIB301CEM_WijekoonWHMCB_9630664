@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import MapKit
 import CoreLocation
+import LocalAuthentication
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -18,6 +19,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        faceID()
 
         // Do any additional setup after loading the view.
     }
@@ -55,15 +57,34 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             pin.coordinate = coordinate
             mapView.addAnnotation(pin)
         }
-    /*
-    // MARK: - Navigation
+    
+    func faceID()  {
+        let context = LAContext()
+        var error: NSError?
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Identify yourself!"
+
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
+                [weak self] success, authenticationError in
+
+                DispatchQueue.main.async {
+                    if success {
+                        let ac = UIAlertController(title: "Authentication success", message: "Well Done", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "Happy", style: .default))
+                        self?.present(ac, animated: true)
+                    } else {
+                        let ac = UIAlertController(title: "Authentication failed", message: "You could not be verified; please try again.", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .default))
+                        self?.present(ac, animated: true)
+                    }
+                }
+            }
+        } else {
+            let ac = UIAlertController(title: "Biometry unavailable", message: "Your device is not configured for biometric authentication.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(ac, animated: true)
+        }
     }
-    */
-
 }
 

@@ -66,5 +66,7 @@
 	<string>Allow the location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Allow the location to use</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Allow for face id</string>
 </dict>
 </plist>

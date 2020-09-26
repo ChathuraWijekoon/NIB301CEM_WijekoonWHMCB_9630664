@@ -23,13 +23,36 @@ class WijekoonWHMCB_COBSCCOMP191P_006UITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testAuthSuccess() throws {
+        let username = "chathura@gmail.com"
+        let userpassword = "chathura1996"
+        
         let app = XCUIApplication()
+        app.activate()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.tabBars.buttons["Update"].tap()
+        
+        app/*@START_MENU_TOKEN@*/.staticTexts["Sign Up with Email"]/*[[".buttons[\"Sign Up with Email\"].staticTexts[\"Sign Up with Email\"]",".staticTexts[\"Sign Up with Email\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        
+        
+        let email = app.textFields["Email"]
+        email.tap()
+        email.typeText(username)
+        
+        sleep(5)
+        
+        let password = app.secureTextFields["Password"]
+        password.tap()
+        password.typeText(userpassword)
+        
+        app/*@START_MENU_TOKEN@*/.staticTexts["Sign In"]/*[[".buttons[\"Sign In\"].staticTexts[\"Sign In\"]",".staticTexts[\"Sign In\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        let updateButton = app/*@START_MENU_TOKEN@*/.staticTexts["Update"]/*[[".buttons.staticTexts[\"Update\"]",".staticTexts[\"Update\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let isThere = updateButton.waitForExistence(timeout: 5)
+        if isThere {
+                XCTAssert(updateButton.exists)
+        }
     }
 
     func testLaunchPerformance() throws {
